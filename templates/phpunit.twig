@@ -26,7 +26,7 @@ class {{ class }}Test extends {{ baseClass.class }}
     private ${{ dependency | transformDependency }};
 
 {% endfor %}
-    protected function setUp()
+    protected function setUp(): void
     {
 {% for dependency in dependencies %}
 {% if not dependency.value|isNull %}
