@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator\Output;
+namespace Detain\TestGenerator\Output;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Mihaeu\TestGenerator\Output\StdoutWriter
+ * @covers \Detain\TestGenerator\Output\StdoutWriter
  */
 class StdoutWriterTest extends TestCase
 {

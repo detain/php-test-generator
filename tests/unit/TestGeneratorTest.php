@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
-use Mihaeu\TestGenerator\Output\OutputProcessor;
+use Detain\TestGenerator\Output\OutputProcessor;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\NameResolver;
 use PhpParser\Parser;
@@ -12,7 +12,7 @@ use PHPUnit\Framework\MockObject\MockObject as Mock;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers Mihaeu\TestGenerator\TestGenerator
+ * @covers Detain\TestGenerator\TestGenerator
  */
 class TestGeneratorTest extends TestCase
 {

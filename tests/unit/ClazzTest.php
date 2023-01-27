@@ -1,14 +1,14 @@
 <?php declare(strict_types = 1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PhpParser\Node\Name;
 use PhpParser\Node\Stmt\Class_;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers Mihaeu\TestGenerator\Clazz
- * @covers Mihaeu\TestGenerator\InvalidFullyQualifiedNameException
+ * @covers Detain\TestGenerator\Clazz
+ * @covers Detain\TestGenerator\InvalidFullyQualifiedNameException
  */
 class ClazzTest extends TestCase
 {

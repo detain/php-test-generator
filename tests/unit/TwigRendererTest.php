@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PHPUnit\Framework\TestCase;
 use Twig\Template;
 use Twig_Environment;
 
 /**
- * @covers Mihaeu\TestGenerator\TwigRenderer
+ * @covers Detain\TestGenerator\TwigRenderer
  */
 class TwigRendererTest extends TestCase
 {

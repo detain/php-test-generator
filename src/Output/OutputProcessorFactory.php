@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator\Output;
+namespace Detain\TestGenerator\Output;
 
-use Mihaeu\TestGenerator\Output\Exception\InvalidFileException;
+use Detain\TestGenerator\Output\Exception\InvalidFileException;
 
 class OutputProcessorFactory
 {

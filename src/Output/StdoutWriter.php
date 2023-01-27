@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator\Output;
+namespace Detain\TestGenerator\Output;
 
 class StdoutWriter implements OutputProcessor
 {

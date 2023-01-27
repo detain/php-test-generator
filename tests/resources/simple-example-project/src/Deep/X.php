@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Something\Different;
 
-use Mihaeu\TestGenerator\Dependency;
+use Detain\TestGenerator\Dependency;
 use PhpParser\Node\Expr\Cast\Object_;
 
 class X

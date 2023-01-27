@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator\Output\Exception;
+namespace Detain\TestGenerator\Output\Exception;
 
 class SubjectNotInSrcBaseException extends \InvalidArgumentException
 {

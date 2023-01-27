@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PhpParser\Node;
 use PhpParser\Node\Expr;

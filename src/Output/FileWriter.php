@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator\Output;
+namespace Detain\TestGenerator\Output;
 
-use Mihaeu\TestGenerator\Output\Exception\InvalidFileException;
-use Mihaeu\TestGenerator\Output\Exception\SubjectNotInSrcBaseException;
-use Mihaeu\TestGenerator\Output\Exception\UnableToWriteTestFileException;
+use Detain\TestGenerator\Output\Exception\InvalidFileException;
+use Detain\TestGenerator\Output\Exception\SubjectNotInSrcBaseException;
+use Detain\TestGenerator\Output\Exception\UnableToWriteTestFileException;
 
 class FileWriter implements OutputProcessor
 {

@@ -2,9 +2,9 @@
   <img src="doc/testgenerator-logo.png">
 </p>
 
-[![Travis branch](https://img.shields.io/travis/mihaeu/php-test-generator/develop.svg)](https://travis-ci.org/mihaeu/php-test-generator)
-[![Codecov branch](https://img.shields.io/codecov/c/github/mihaeu/php-test-generator/develop.svg)](https://codecov.io/gh/mihaeu/php-test-generator)
-[![Infection MSI](https://badge.stryker-mutator.io/github.com/mihaeu/php-test-generator/master)](https://infection.github.io)
+[![Travis branch](https://img.shields.io/travis/detain/php-test-generator/develop.svg)](https://travis-ci.org/detain/php-test-generator)
+[![Codecov branch](https://img.shields.io/codecov/c/github/detain/php-test-generator/develop.svg)](https://codecov.io/gh/detain/php-test-generator)
+[![Infection MSI](https://badge.stryker-mutator.io/github.com/detain/php-test-generator/master)](https://infection.github.io)
 ![](https://img.shields.io/badge/PHP-7.3-brightgreen.svg)
 ![](https://img.shields.io/badge/PHP-7.2-brightgreen.svg)
 ![](https://img.shields.io/badge/PHP-7.1-yellow.svg)
@@ -91,10 +91,10 @@ In case you want to generate different tests with different settings and locatio
 
 ```bash
 # local install
-composer require "mihaeu/test-generator:^1.0"
+composer require "detain/test-generator:^1.0"
 
 # global install
-composer global require "mihaeu/test-generator:^1.0"
+composer global require "detain/test-generator:^1.0"
 ```
 
 ### Phar (PHP 5.5+)
@@ -102,7 +102,7 @@ composer global require "mihaeu/test-generator:^1.0"
 Since I actually need to use this on 5.5 legacy projects (should work with 5.4 as well, but didn't test for it), I also release a phar file which works for older versions:
 
 ```bash
-wget https://github.com/mihaeu/php-test-generator/releases/download/1.2.0/test-generator-1.2.0.phar
+wget https://github.com/detain/php-test-generator/releases/download/1.2.0/test-generator-1.2.0.phar
 chmod +x test-generator-1.2.0.phar
 ```
 
@@ -111,7 +111,7 @@ chmod +x test-generator-1.2.0.phar
 ### Git
 
 ```bash
-git clone https://github.com/mihaeu/php-test-generator
+git clone https://github.com/detain/php-test-generator
 cd php-test-generator
 composer install
 bin/test-generator --help
@@ -125,7 +125,7 @@ Given a PHP file like:
 
 ```php
 <?php declare(strict_types=1);
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 use Twig_TemplateWrapper;
 class TwigRenderer
 {
@@ -154,7 +154,7 @@ will produce a test including mocked dependencies:
 ```php
 <?php
 
-namespace Mihaeu\PhpDependencies\Analyser;
+namespace Detain\PhpDependencies\Analyser;
 
 use Mockery;
 use Mockery\MockInterface;
@@ -168,17 +168,17 @@ class StaticAnalyserTest extends TestCase
     /** @var PhpParser\NodeTraverser | MockInterface */
     private $mockNodeTraverser;
 
-    /** @var Mihaeu\PhpDependencies\Analyser\DependencyInspectionVisitor | MockInterface */
+    /** @var Detain\PhpDependencies\Analyser\DependencyInspectionVisitor | MockInterface */
     private $mockDependencyInspectionVisitor;
 
-    /** @var Mihaeu\PhpDependencies\Analyser\Parser | MockInterface */
+    /** @var Detain\PhpDependencies\Analyser\Parser | MockInterface */
     private $mockParser;
 
     protected function setUp()
     {
         $this->mockNodeTraverser = Mockery::mock(PhpParser\NodeTraverser::class);
-        $this->mockDependencyInspectionVisitor = Mockery::mock(Mihaeu\PhpDependencies\Analyser\DependencyInspectionVisitor::class);
-        $this->mockParser = Mockery::mock(Mihaeu\PhpDependencies\Analyser\Parser::class);
+        $this->mockDependencyInspectionVisitor = Mockery::mock(Detain\PhpDependencies\Analyser\DependencyInspectionVisitor::class);
+        $this->mockParser = Mockery::mock(Detain\PhpDependencies\Analyser\Parser::class);
         $this->classUnderTest = new StaticAnalyser(
             $this->mockNodeTraverser,
             $this->mockDependencyInspectionVisitor,
@@ -197,7 +197,7 @@ class StaticAnalyserTest extends TestCase
 
  - avoid FQNs by default by including (`use`) all required namespaces
  - `--template=<path>` for custom templates
- - and many more features are planned, just [check out the functional backlog](https://github.com/mihaeu/php-test-generator/tree/master/tests/functional/backlog)
+ - and many more features are planned, just [check out the functional backlog](https://github.com/detain/php-test-generator/tree/master/tests/functional/backlog)
 
 ## Contributing
 

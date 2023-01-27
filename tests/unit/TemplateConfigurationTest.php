@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers Mihaeu\TestGenerator\TemplateConfiguration
+ * @covers Detain\TestGenerator\TemplateConfiguration
  */
 class TemplateConfigurationTest extends TestCase
 {

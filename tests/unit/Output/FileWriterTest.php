@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator\Output;
+namespace Detain\TestGenerator\Output;
 
-use Mihaeu\TestGenerator\Output\Exception\InvalidFileException;
-use Mihaeu\TestGenerator\Output\Exception\SubjectNotInSrcBaseException;
-use Mihaeu\TestGenerator\Output\Exception\UnableToWriteTestFileException;
+use Detain\TestGenerator\Output\Exception\InvalidFileException;
+use Detain\TestGenerator\Output\Exception\SubjectNotInSrcBaseException;
+use Detain\TestGenerator\Output\Exception\UnableToWriteTestFileException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Mihaeu\TestGenerator\Output\FileWriter
- * @covers \Mihaeu\TestGenerator\Output\Exception\InvalidFileException
- * @covers \Mihaeu\TestGenerator\Output\Exception\UnableToWriteTestFileException
- * @covers \Mihaeu\TestGenerator\Output\Exception\SubjectNotInSrcBaseException
+ * @covers \Detain\TestGenerator\Output\FileWriter
+ * @covers \Detain\TestGenerator\Output\Exception\InvalidFileException
+ * @covers \Detain\TestGenerator\Output\Exception\UnableToWriteTestFileException
+ * @covers \Detain\TestGenerator\Output\Exception\SubjectNotInSrcBaseException
  */
 class FileWriterTest extends TestCase
 {

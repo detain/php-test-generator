@@ -1,8 +1,8 @@
 {
-    "name": "mihaeu/test-generator",
-    "description": "Generate test cases for existing files",
+    "name": "detain/test-generator",
+    "description": "Generate test cases for existing files (fork of https://github.com/detain/php-test-generator )",
     "type": "library",
-    "homepage": "https://github.com/mihaeu/php-test-generator",
+    "homepage": "https://github.com/detain/php-test-generator",
     "keywords": [
         "testing",
         "generation",
@@ -30,16 +30,20 @@
         {
             "name": "Michael Haeuslmann",
             "email": "haeuslmann@gmail.com"
+        },
+        {
+            "name": "Joe Huss",
+            "email": "detain@interserver.net"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Mihaeu\\TestGenerator\\": ["src/"]
+            "Detain\\TestGenerator\\": ["src/"]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mihaeu\\TestGenerator\\": [
+            "Detain\\TestGenerator\\": [
                 "tests/unit/",
                 "tests/functional/",
                 "tests/integration/"
@@ -48,6 +52,6 @@
         "files": ["vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"]
     },
     "support": {
-        "issues": "https://github.com/mihaeu/php-test-generator/issues"
+        "issues": "https://github.com/detain/php-test-generator/issues"
     }
 }

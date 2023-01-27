@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use Docopt\Response;
 use PhpParser\NodeTraverser;
@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 use Twig_Environment;
 
 /**
- * @covers Mihaeu\TestGenerator\DependencyContainer
+ * @covers Detain\TestGenerator\DependencyContainer
  */
 class DependencyContainerTest extends TestCase
 {

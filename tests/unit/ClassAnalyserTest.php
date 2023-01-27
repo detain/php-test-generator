@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PhpParser\Node\Expr;
 use PhpParser\Node\Expr\Array_;
@@ -18,7 +18,7 @@ use PhpParser\Node\Stmt\Function_;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers Mihaeu\TestGenerator\ClassAnalyser
+ * @covers Detain\TestGenerator\ClassAnalyser
  */
 class ClassAnalyserTest extends TestCase
 {

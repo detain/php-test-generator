@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-use Mihaeu\TestGenerator\DependencyContainer;
-use Mihaeu\TestGenerator\PhpFile;
+use Detain\TestGenerator\DependencyContainer;
+use Detain\TestGenerator\PhpFile;
 
 if (file_exists(__DIR__.'/../vendor/autoload.php')) {
     require __DIR__.'/../vendor/autoload.php';

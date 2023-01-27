@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
-use Mihaeu\TestGenerator\Output\OutputProcessor;
+use Detain\TestGenerator\Output\OutputProcessor;
 use PhpParser\NodeTraverser;
 use PhpParser\Parser;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers Mihaeu\TestGenerator\PhpFile
- * @covers Mihaeu\TestGenerator\NotAPhpFileException
+ * @covers Detain\TestGenerator\PhpFile
+ * @covers Detain\TestGenerator\NotAPhpFileException
  */
 class PhpFileTest extends TestCase
 {

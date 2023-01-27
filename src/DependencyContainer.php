@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use Docopt\Response;
-use Mihaeu\TestGenerator\Output\Exception\InvalidFileException;
-use Mihaeu\TestGenerator\Output\OutputProcessor;
-use Mihaeu\TestGenerator\Output\OutputProcessorFactory;
+use Detain\TestGenerator\Output\Exception\InvalidFileException;
+use Detain\TestGenerator\Output\OutputProcessor;
+use Detain\TestGenerator\Output\OutputProcessorFactory;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\NameResolver;
 use PhpParser\Parser;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mihaeu\TestGenerator;
+namespace Detain\TestGenerator;
 
 use PHPUnit\Framework\TestCase;
 
